@@ -1,0 +1,14 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
