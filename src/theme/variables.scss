@@ -1,2 +1,14 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+
+$Background: #121212 !default;
+$PrimaryColor: #116d6e !default;
+$SecondaryColor: #CD1818 !default;
+$DarkContainer: #292929 !default;
+$LightColor: #f4f5f8 !default;
+
+// colores de prioridad
+
+$PrioridadAlta: #FF1818 !default; // Rojo
+$PrioridadMedio: #FFB900 !default; // Amarillo
+$PrioridadBaja: #36AE7C !default; // Verde

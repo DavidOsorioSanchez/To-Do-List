@@ -1,7 +1,48 @@
 <main>
     <app-navbar [title]="'Settings'" [logo]="'settings'"></app-navbar>
-    <div class="main-container">
-
-    </div>
+    <ion-content class="main-content">
+        <ion-card class="settings-card">
+            <ion-card-header>
+                <ion-card-title>Agregar Tarea</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <p>Aqui encontraras las herramientas para crear nuevas tareas.</p>
+                <form>
+                    <ion-item>
+                        <ion-label position="stacked">Nombre</ion-label>
+                        <ion-input type="text" placeholder="Ingresa el nombre de la tarea"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="stacked">Contexto</ion-label>
+                        <ion-textarea placeholder="Describe el contexto de la tarea"></ion-textarea>
+                    </ion-item>
+                    <ion-accordion>
+                        <ion-item>
+                            <ion-label position="stacked">Fecha de Vencimiento</ion-label>
+                            <ion-datetime presentation="date" placeholder="Selecciona una fecha"></ion-datetime>
+                        </ion-item>
+                    </ion-accordion>
+                    
+                    <ion-item>
+                        <ion-label position="stacked">Prioridad</ion-label>
+                        <ion-select placeholder="Selecciona la prioridad">
+                            <ion-select-option value="alta">Alta</ion-select-option>
+                            <ion-select-option value="media">Media</ion-select-option>
+                            <ion-select-option value="baja">Baja</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="stacked">Estado</ion-label>
+                        <ion-select placeholder="Selecciona el estado">
+                            <ion-select-option value="pendiente">Pendiente</ion-select-option>
+                            <ion-select-option value="completada">Completada</ion-select-option>
+                            <ion-select-option value="cancelada">Cancelada</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                    <ion-button expand="block" type="submit">Agregar Tarea</ion-button>
+                </form>
+            </ion-card-content>
+        </ion-card>
+    </ion-content>
     <app-footer></app-footer>
 </main>
